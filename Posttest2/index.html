@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Anda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            margin-top: 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .total-row {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+        .payment-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .payment-button:hover {
+            background-color: #0056b3;
+        }
+        .payment-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .payment-options label {
+            margin-right: 10px;
+        }
+        .order-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .date-input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .closing-message {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #007bff;
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>PESANAN ANDA</h2>
+        <div class="order-info">
+            <div><b>Nama Pelayan:</b> Angkel Mutu</div>
+            <div>
+                <b>Tanggal Pemesanan:</b>
+                <input type="date" class="date-input" id="tanggalPemesanan">
+            </div>
+        </div>
+
+        <h3>Nama Pemesan:</h3>
+        <p>MUHAMMAD ANNUR AKBAR<br>
+        Samarinda</p>
+
+        <h3>RINCIAN PESANAN :</h3>
+        <table>
+            <tr>
+                <td><img src="nasi-goreng.jpeg" alt="Nasi Goreng Spesial" width="50"> Nasi Goreng Spesial</td>
+                <td>1 x Nasi Goreng Spesial</td>
+                <td>Rp 25.000</td>
+            </tr>
+            <tr>
+                <td><img src="es-teh-manis.jpeg" alt="Es Teh Manis" width="50"> Es Teh Manis</td>
+                <td>1 x Es Teh Manis</td>
+                <td>Rp 5.000</td>
+            </tr>
+            <tr>
+                <td colspan="2">Total Pesanan</td>
+                <td>Rp 30.000</td>    
+            </tr>
+            <tr>
+                <td colspan="2">Pajak</td>
+                <td>Rp 2.000</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="2">Total</td>
+                <td>Rp 32.000</td>
+            </tr>
+        </table>
+
+        <button class="payment-button">PEMBAYARAN</button>
+        <div class="payment-options">
+            <label><input type="radio" name="payment" value="bca"> Bank BCA</label>
+            <label><input type="radio" name="payment" value="bri"> Bank BRI</label>
+            <label><input type="radio" name="payment" value="mandiri"> Bank Mandiri</label>
+            <label><input type="radio" name="payment" value="dana"> DANA</label>
+            <label><input type="radio" name="payment" value="cash"> CASH</label>
+        </div>
+        
+        <div class="closing-message">
+            SELAMAT MENIKMATI DAN TERIMA KASIH
+        </div>
+
+        <p>Nama: Muhammad Annur Akbar</p>
+        <p>NIM: 2309106110</p>
+        <p>Praktikum Web: Posttest 2</p>
+    </div>
+</body>
+</html>
