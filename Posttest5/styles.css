@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("background_asrama.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    background-color: saddlebrown;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    background-color: rgba(139, 69, 19, 0.8);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar.active {
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgba(139, 69, 19, 0.8);
+    color: #000;
+}
+
+.navbar button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar button:hover {
+    background-color: rgba(139, 69, 19, 0.8);
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.toggle-theme {
+    cursor: pointer;
+    color: white;
+}
+
+.registration-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-container {
+    background-color: rgba(139, 69, 19, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.popup-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.about-container img {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.room-types {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.room-types img {
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(117, 49, 49, 0.1);
+    padding: 20px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.portfolio-item h3 {
+    font-size: 24px;
+    color: saddlebrown;
+    margin-bottom: 10px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.portfolio-item a {
+    color: saddlebrown;
+    text-decoration: none;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none; 
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: row; 
+        position: static;
+        background-color: transparent;
+    }
+}
